@@ -1,9 +1,2 @@
-/vendor
 /node_modules
-Homestead.yaml
-Homestead.json
-/bower_components
-public/js
-public/css
-public/build
-public/views
+

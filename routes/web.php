@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', 'AngularController@serveApp');
+// routing
+Route::resource('/', 'TodoController');
+Route::resource('/get_todos', 'TodoController');
+Route::resource('/save_todo', 'TodoController@save');
+Route::resource('/delete_todo/{id}','TodoController@delete');
 
 Route::get('/unsupported-browser', 'AngularController@unsupported');

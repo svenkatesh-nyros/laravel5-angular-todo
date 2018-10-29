@@ -27,8 +27,16 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
 				main: {}
 			}
 		})
-		.state('app.landing', {
+		.state('app.todo-app', {
             url: '/',
+            views: {
+                'main@': {
+                    templateUrl: getView('todo-app')
+                }
+            }
+        })
+        .state('app.landing', {
+            url: '/home',
             views: {
                 'main@': {
                     templateUrl: getView('landing')
